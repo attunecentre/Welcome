@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attune Centre | Biodynamic Craniosacral Therapy</title>
+
+    <meta name="description" content="Attune Centre offers gentle Biodynamic Craniosacral Therapy in a calm and supportive environment.">
+
+    <style>
+
+        /* =========================================================
+           ATTUNE CENTRE
+           Calm, natural and spacious design
+        ========================================================= */
+
+        :root {
+            --bg-base: #f5f7f6;
+            --bg-warm: #fcfbfa;
+            --bg-green: #e3ebe7;
+            --accent-soft: #99b898;
+            --accent-deep: #4f6d62;
+            --accent-sky: #d0e1d4;
+            --text-main: #2a363b;
+            --text-muted: #5e6f74;
+            --white: #ffffff;
+
+            --font-stack:
+                "Segoe UI",
+                Tahoma,
+                Geneva,
+                Verdana,
+                sans-serif;
+
+            --max-width: 1100px;
+            --radius: 14px;
+            --shadow: 0 12px 35px rgba(79, 109, 98, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            background: var(--bg-base);
+            color: var(--text-main);
+            line-height: 1.7;
+            letter-spacing: 0.2px;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+        }
+
+
+        /* =========================================================
+           NAVIGATION
+        ========================================================= */
+
+        header {
+            background: rgba(252, 251, 250, 0.96);
+            border-bottom: 1px solid rgba(79, 109, 98, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 1.2rem 2rem;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--accent-deep);
+            text-decoration: none;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 1.8rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-deep);
+        }
+
+        .nav-book {
+            background: var(--accent-deep);
+            color: white !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+        }
+
+        .nav-book:hover {
+            background: var(--accent-soft);
+            color: var(--text-main) !important;
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .hero {
+            background:
+                linear-gradient(
+                    180deg,
+                    #e3ebe7 0%,
+                    var(--bg-base) 100%
+                );
+
+            padding: 7rem 2rem 5rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .eyebrow {
+            color: var(--accent-deep);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.78rem;
+            margin-bottom: 1.2rem;
+            font-weight: 600;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.4rem, 5vw, 4rem);
+            color: var(--accent-deep);
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-deep);
+            color: var(--bg-warm);
+            padding: 0.9rem 2.3rem;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+
+            box-shadow:
+                0 4px 15px rgba(79, 109, 98, 0.15);
+
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-soft);
+            color: var(--text-main);
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--accent-deep);
+            border: 1px solid rgba(79, 109, 98, 0.35);
+            box-shadow: none;
+            margin-left: 0.5rem;
+        }
+
+        .btn-secondary:hover {
+            background: var(--accent-sky);
+        }
+
+
+      
+
+
+        /* =========================================================
+           COMMON SECTIONS
+        ========================================================= */
+
+        .section {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 6rem 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-title {
+            font-size: 2.3rem;
+            color: var(--accent-deep);
+            margin-bottom: 1rem;
+            font-weight: 300;
+            line-height: 1.3;
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+
+        /* =========================================================
+           ABOUT
+        ========================================================= */
+
+        .about-intro {
+            max-width: 760px;
+            margin: 0 auto 4rem;
+            text-align: center;
+        }
+.bcst-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.bcst-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+}
+
+.bcst-content {
+    text-align: left;
+}
+
+.bcst-content .section-title {
+    text-align: left;
+}
+
+.bcst-content p {
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
+}
+
+.bcst-content .section-subtitle {
+    margin-bottom: 1.5rem;
+}
+        .about-intro p {
+            color: var(--text-muted);
+            margin-bottom: 1.2rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(280px, 1fr));
+
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--bg-warm);
+            padding: 2.7rem 2.2rem;
+            border-radius: var(--radius);
+
+            box-shadow: var(--shadow);
+
+            border:
+                1px solid rgba(153, 184, 152, 0.15);
+
+            transition:
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+
+            box-shadow:
+                0 18px 40px rgba(79, 109, 98, 0.1);
+        }
+
+        .card-number {
+            color: var(--accent-soft);
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .card h3 {
+            color: var(--accent-deep);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.98rem;
+        }
+
+
+        /* =========================================================
+           WHAT TO EXPECT
+        ========================================================= */
+
+        .expect-section {
+            background: var(--accent-sky);
+            padding: 6rem 2rem;
+        }
+
+        .expect-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        .expect-inner .card {
+            background: rgba(252, 251, 250, 0.85);
+        }
+
+        .expect-note {
+            max-width: 700px;
+            margin: 3rem auto 0;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+
+        /* =========================================================
+           PRACTITIONER
+        ========================================================= */
+
+        .practitioner {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .practitioner-image {
+            min-height: 450px;
+            border-radius: 18px;
+
+            background:
+                linear-gradient(
+                    rgba(245, 247, 246, 0.05),
+                    rgba(245, 247, 246, 0.2)
+                ),
+                url("https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&w=1000&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .practitioner-content h2 {
+            font-size: 2.2rem;
+            color: var(--accent-deep);
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+        }
+
+        .practitioner-content p {
+            color: var(--text-muted);
+            margin-bottom: 1.2rem;
+        }
+
+
+        /* =========================================================
+           PRICING
+        ========================================================= */
+
+        .price-tag {
+            font-size: 2rem;
+            color: var(--accent-deep);
+            font-weight: 300;
+            margin: 1rem 0;
+        }
+
+        .price-features {
+            list-style: none;
+            margin-top: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .price-features li {
+            margin-bottom: 0.6rem;
+            padding-left: 1.3rem;
+            position: relative;
+        }
+
+        .price-features li::before {
+            content: "•";
+            color: var(--accent-soft);
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+
+        .pricing-note {
+            text-align: center;
+            color: var(--text-muted);
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+
+
+        /* =========================================================
+           BOOKING
+        ========================================================= */
+
+        .booking-section {
+            background:
+                linear-gradient(
+                    135deg,
+                    #e3ebe7,
+                    #f5f7f6
+                );
+
+            padding: 6rem 2rem;
+        }
+
+        .booking-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .booking-container p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .booking-steps {
+            margin: 3rem 0;
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .booking-step {
+            padding: 1.5rem;
+        }
+
+        .booking-step span {
+            display: flex;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: var(--accent-deep);
+            color: white;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+
+        .booking-step h3 {
+            color: var(--accent-deep);
+            font-size: 1.05rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .booking-step p {
+            font-size: 0.9rem;
+        }
+
+
+        /* =========================================================
+           FAQ
+        ========================================================= */
+
+        .faq-container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-warm);
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            border: 1px solid rgba(153, 184, 152, 0.15);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.4rem 1.5rem;
+            width: 100%;
+            background: none;
+            border: none;
+
+            text-align: left;
+
+            font-size: 1rem;
+            color: var(--accent-deep);
+
+            cursor: pointer;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            font-family: inherit;
+        }
+
+        .faq-question::after {
+            content: "+";
+            font-size: 1.4rem;
+            color: var(--accent-soft);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+
+            padding: 0 1.5rem;
+
+            color: var(--text-muted);
+            font-size: 0.95rem;
+
+            transition:
+                max-height 0.35s ease,
+                padding 0.35s ease;
+        }
+
+        .faq-item.active .faq-answer {
+            padding-bottom: 1.5rem;
+        }
+
+
+        /* =========================================================
+           CONTACT
+        ========================================================= */
+
+        .contact-section {
+            background: var(--bg-warm);
+            padding: 6rem 2rem;
+            border-top: 1px solid rgba(153, 184, 152, 0.15);
+        }
+
+        .contact-container {
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin: 2.5rem auto;
+            color: var(--text-main);
+
+            background: var(--bg-base);
+
+            padding: 2rem;
+
+            border-radius: 12px;
+
+            text-align: left;
+
+            max-width: 480px;
+        }
+
+        .contact-info p {
+            margin: 1rem 0;
+            font-size: 1rem;
+        }
+
+        .contact-info strong {
+            color: var(--accent-deep);
+            font-weight: 500;
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            background: var(--accent-deep);
+            color: var(--bg-base);
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--bg-base);
+            text-decoration: none;
+        }
+
+        .footer-links {
+            margin-top: 1rem;
+        }
+
+        .footer-links a {
+            margin: 0 0.6rem;
+            opacity: 0.85;
+        }
+
+
+        /* =========================================================
+           MOBILE
+        ========================================================= */
+
+       @media (max-width: 850px) {
+
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.82rem;
+    }
+
+
+    /* BCST image + text */
+
+    .bcst-intro {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .bcst-image img {
+        height: 320px;
+    }
+
+
+    /* Practitioner */
+
+    .practitioner {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .practitioner-image {
+        min-height: 320px;
+    }
+
+}
+
+            .nav-links {
+                gap: 0.8rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .nav-links a {
+                font-size: 0.82rem;
+            }
+
+            .practitioner {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .practitioner-image {
+                min-height: 320px;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding: 5rem 1.3rem 3rem;
+            }
+
+            .hero h1 {
+                font-size: 2.4rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-image {
+                height: 260px;
+                border-radius: 12px;
+            }
+
+            .section {
+                padding: 4.5rem 1.3rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 2.2rem 1.5rem;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+
+            .btn-secondary {
+                margin: 0.8rem 0 0;
+            }
+
+            .expect-section,
+            .booking-section,
+            .contact-section {
+                padding: 4.5rem 1.3rem;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         HEADER / NAVIGATION
+    ========================================================== -->
+
+    <header>
+
+        <nav class="nav-container">
+
+            <a href="#home" class="logo">
+                Attune Centre
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#about">
+                        About BCST
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#expect">
+                        What to expect
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about-me">
+                        About me
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#pricing">
+                        Pricing
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#faq">
+                        FAQ
+                    </a>
+                </li>
+ <li>
+        <a href="#contact">
+            Contact
+        </a>
+    </li>
+                <li>
+                    <a href="#booking" class="nav-book">
+                        Book
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================================
+         HERO
+    ========================================================== -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    Biodynamic Craniosacral Therapy
+                </div>
+
+                <h1>
+                    A gentle but profound holistic therapy.
+                </h1>
+
+                <p>
+                    Welcome to Attune Centre — a calm and supportive space
+                    to pause, rest and reconnect with your health through
+                    gentle Biodynamic Craniosacral Therapy.
+                </p>
+
+                <a href="#booking" class="btn">
+                    Book an appointment
+                </a>
+
+                <a href="#about" class="btn btn-secondary">
+                    Learn more
+                </a>
+
+            </div>
+
+
+            <div class="hero-image-container">
+
+                <div
+                    class="hero-image"
+                    role="img"
+                    aria-label="Calm treatment space"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             THERAPY
+        ====================================================== -->
+
+        <section id="about" class="section">
+
+            <div class="bcst-intro">
+
+    <div class="bcst-image">
+        <img
+            src="attunecentreroom.jpg"
+            alt="Calm treatment space"
+        >
+    </div>
+
+    <div class="bcst-content">
+
+        <div class="eyebrow">
+            About BCST
+        </div>
+
+        <h2 class="section-title">
+            Biodynamic Craniosacral Therapy
+        </h2>
+
+        <p class="section-subtitle">
+            A subtle, gentle and non-invasive form of hands-on therapy that creates space for
+            your body and nervous system to slow, settle and attune to its inherent health.
+        </p>
+
+        <p>
+            The practitioner listens through gentle touch and supports
+            the conditions in which the body can find greater ease and health.
+        </p>
+
+        <p>
+            Sessions are an opportunity to step away from the
+            busyness of everyday life and simply notice what is
+            happening within you.
+        </p>
+
+    </div>
+
+</div>
+
+
+            <div class="about-intro">
+               
+<p>Craniosacral therapy was discovered by osteopath William Garner Sutherland at the end of the 19th Century. <a href="https://www.craniosacraltherapy.org/our-history">See more information about the history of BCST.</a></p>
+
+            </div>
+
+
+            <div class="grid-container">
+
+                <div class="card">
+
+                   
+                    <h3>
+                        Gentle & non-invasive
+                    </h3>
+
+                    <p>
+                        You remain fully clothed and comfortably
+                        supported throughout your session. The work
+                        uses very light touch and periods of stillness.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    
+                    <h3>
+                        Space to slow down
+                    </h3>
+
+                    <p>
+                        Modern life can leave us feeling constantly
+                        switched on. Your session offers time away from
+                        the noise to breathe, rest, settle and heal.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    
+                    <h3>
+                        Listen to your body
+                    </h3>
+
+                    <p>
+                        There is nothing you need to achieve. You are
+                        invited to become curious about your experience
+                        and allow your own process to unfold naturally.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div style="
+                max-width: 760px;
+                margin: 4rem auto 0;
+                text-align: center;
+            ">
+
+                <p style="color: var(--text-muted);">
+
+                    People may choose to receive craniosacral therapy
+                    during times of stress, discomfort, transition, tiredness or
+                    overwhelm, or simply as dedicated time for rest, recharge
+                    and wellbeing. Much dis-ease can be addressed with BCST due to its underlying support of the nervous system.
+
+                </p>
+
+                <p style="
+                    color: var(--text-muted);
+                    margin-top: 1.5rem;
+                    font-size: 0.9rem;
+                ">
+
+                    <strong>Please note:</strong>
+                    Biodynamic Craniosacral Therapy is a complementary
+                    wellbeing practice and is not intended to diagnose,
+                    treat or cure medical conditions. If you have a
+                    medical concern, please consult an appropriate
+                    healthcare professional.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             WHAT TO EXPECT
+        ====================================================== -->
+
+        <section id="expect" class="expect-section">
+
+            <div class="expect-inner">
+
+                <div class="section-header">
+
+                    <div class="eyebrow">
+                        Your session
+                    </div>
+
+                    <h2 class="section-title">
+                        What to expect
+                    </h2>
+
+                    <p class="section-subtitle">
+                        Your 'cranio' session gives the body an opportunity to slow down, listen inwardly and simply be present.
+                    </p>
+
+                </div>
+
+
+                <div class="grid-container">
+
+                    <div class="card">
+
+                        <div class="card-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Arrive & settle
+                        </h3>
+
+                        <p>
+                            We begin with a relaxed conversation about
+                            how you are feeling and what has brought
+                            you in. There is no need to have everything
+                            figured out beforehand.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-number">
+                            02
+                        </div>
+
+                        <h3>
+                            The session
+                        </h3>
+
+                        <p>
+                            You remain fully clothed and comfortably
+                            supported on a treatment table (or chair if more suitable). Gentle
+                            touch and stillness allow you to become 
+                            aware of your own experience.
+                        </p>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <div class="card-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Time to integrate
+                        </h3>
+
+                        <p>
+                            At the end of the session, there is time to integrate and notice how you feel.
+                    
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="expect-note">
+
+                    <p>
+                        <strong>What should I wear?</strong>
+                    </p>
+
+                    <p>
+                        Comfortable clothing is ideal. You remain fully
+                        clothed throughout the session, so choose
+                        whatever helps you feel relaxed and at ease.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             ABOUT ME
+        ====================================================== -->
+
+        <section id="about-me" class="section">
+
+            <div class="practitioner">
+
+               
+
+<img
+    src="Tina 2019.jpg"
+    alt="Attune Centre practitioner"
+>
+                <div class="practitioner-content">
+
+                    <div class="eyebrow">
+                        About me
+                    </div>
+
+                    <h2>
+                        Tina Mortensen - Diploma Biodynamic Craniosacral Therapy
+                    </h2>
+<p>
+                        
+                            My journey with Biodynamic Craniosacral Therapy began with sessions for my children in the early 2000s with a fantastic local therapist, Simon Gosling, then living in Motueka. My children were helped with birth trauma and discomfort or injuries from various tumbles. I also had treatments myself. My own tailbone discomfort which had plagued me since my teenage years was sorted within a few sessions. The 'magic' of cranio was intoxicating and transporting and, of course, so healing.</p>
+
+<p>Fortune came my way a decade or more later and I had the opportunity to learn the art of cranio at Body Intelligence in Auckland over two years. I qualified with a Diploma in Biodynamic Craniosacral Therapy in 2019. I feel privileged to have learnt the beautiful art of cranio, a profound, powerful yet gentle and wondrous therapy.
+ </p>
+                    <p>
+                       In 2019 I first started Attune Centre as a clinical practice for Biodynamic Craniosacral Therapy. My clinic room is a calming environment in a tiny timber lined studio where you can step away from the demands of everyday life. </p>
+
+<p>Everyone's body has the ability to self heal, it just needs the opportunity. Through the practitioner's focus on health and the deep listening to the body, acute and chronic states can be alleviated. A client is supported to be fully present in their body and the practitioner assists to help the client resource their system and strengthen inherent health.
+                    </p>
+
+                    
+                    <p>
+                        My hope is that you leave your session feeling
+                        that you have touched a depth of stillness where self-regulation and health is found and have had time to pause, breathe and listen to yourself.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PRICING
+        ====================================================== -->
+
+        <section id="pricing" class="section">
+
+            <div class="section-header">
+
+                
+
+                <h2 class="section-title">
+                    Pricing
+                </h2>
+
+               
+
+            </div>
+
+
+            <div class="grid-container">
+
+
+                <div class="card">
+
+                    <h3>
+                        Adult Session (18 & over)
+                    </h3>
+
+                    <div class="price-tag">
+                        $65
+                    </div>
+
+                    <p>
+                        A spacious appointment with time to talk,
+                        settle in and experience the therapy at your
+                        own pace.
+                    </p>
+
+                    <ul class="price-features">
+
+                        <li>
+                            Approximately 60 minutes
+                        </li>
+
+                        
+                        <li>
+                            Gentle hands-on session
+                        </li>
+
+                        <li>
+                            Time for questions and integration
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Children and babies
+                    </h3>
+
+                    <div class="price-tag">
+                        $50
+                    </div>
+
+                    <p>
+                        Biodynamic Craniosacral Therapy is an excellent modality for children and babies. It is gentle and non-invasive and can help with a variety of issues including unsettledness, colic, reflux, birth trauma and other issues.
+                    </p>
+
+                    <ul class="price-features">
+
+                        <li>
+                            Approximately 45-60 minutes
+                        </li>
+
+                           <li>
+                            Children & babies are often very efficient, hence the shorter session
+                        </li>
+                   
+
+                        <li>
+                            Gentle hands-on therapy
+                        </li>
+
+                        <li>
+                            Allow time after the session to settle.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>
+                        Gift Voucher
+                    </h3>
+
+                    <div class="price-tag">
+                        $65
+                    </div>
+
+                    <p>
+                        Give someone the gift of time, rest and
+                        wellbeing. Gift vouchers can be arranged for
+                        a session or an amount of your choice.
+                    </p>
+
+                    <ul class="price-features">
+
+                        <li>
+                            Personalised message available
+                        </li>
+
+                        <li>
+                            Beautifully presented
+                        </li>
+
+                        <li>
+                            Ideal for special occasions
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <p class="pricing-note">
+
+                [Please allow 24 hours notice of cancellation.]
+
+            </p>
+
+        </section>
+
+
+        <!-- =====================================================
+             BOOKING
+        ====================================================== -->
+
+        <section id="booking" class="booking-section">
+
+            <div class="booking-container">
+
+                
+                <h2 class="section-title">
+                    Book an appointment
+                </h2>
+
+                <p>
+                    If you feel that a session at Attune Centre could
+                    support you, here are ways you can get in touch.
+                </p>
+
+
+               
+ <div class="button-row">
+
+    <a
+        href="#booking"
+        class="btn"
+    >
+        Book an appointment
+    </a>
+
+    <a
+        href="mailto:attune.centre@proton.me"
+        class="btn"
+    >
+        Email to enquire
+    </a>
+
+    <a
+    href="https://wa.me/6421305051"
+    class="btn"
+    target="_blank"
+>
+    WhatsApp to enquire
+</a>
+
+</div>
+
+
+        </section>
+
+
+        <!-- =====================================================
+             FAQ
+        ====================================================== -->
+
+        <section id="faq" class="section">
+
+            <div class="section-header">
+
+                <div class="eyebrow">
+                    Good to know
+                </div>
+
+                <h2 class="section-title">
+                    Frequently asked questions
+                </h2>
+
+                <p class="section-subtitle">
+                    A few things you may like to know before your
+                    first session.
+                </p>
+
+            </div>
+
+
+            <div class="faq-container">
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Do I need previous experience?
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Not at all. You don't need any previous
+                            experience with craniosacral therapy.
+                            Before your first session, we'll take time
+                            to talk about what you're looking for and
+                            answer any questions you may have.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        What happens during a session?
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            You remain fully clothed and comfortably
+                            supported on a treatment table. The session
+                            involves gentle touch and periods of
+                            stillness.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        How long does a session take?
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Sessions are approximately 60 minutes.
+                            Please allow a little additional time around
+                            your appointment so that you can take your time.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        What should I wear?
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Comfortable clothing is ideal. You remain
+                            fully clothed throughout the session, so
+                            choose anything that allows you to feel
+                            comfortable and relaxed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        Is this suitable for everyone?
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Everyone's circumstances are different. If
+                            you have a medical condition, are receiving
+                            medical treatment, or are unsure whether
+                            this approach is appropriate for you,
+                            please speak with your healthcare
+                            professional before booking.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="faq-item">
+
+                    <button class="faq-question">
+                        What if I need to cancel?
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Please provide as much notice as possible
+                            (24 hours minimum) if you need to change or cancel your
+                            appointment.
+                            <strong>
+                                [Add your cancellation policy here.]
+                            </strong>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <section id="contact" class="contact-section">
+
+            <div class="contact-container">
+
+                <div class="eyebrow">
+                    Get in touch
+                </div>
+
+                <h2 class="section-title">
+                    Contact me
+                </h2>
+
+                <p class="section-subtitle">
+                    Questions, bookings, or simply wanting to know
+                    a little more? Please get in touch.
+                </p>
+
+
+                <div class="contact-info">
+
+                    <p>
+                        <strong>Name</strong><br>
+                        Tina Mortensen
+                    </p>
+
+                    <p>
+                        <strong>Email</strong><br>
+                        attune.centre@proton.me
+                    </p>
+
+                    <p>
+                        <strong>Phone</strong><br>
+                        021 130 5051
+                    </p>
+
+                    <p>
+                        <strong>Location</strong><br>
+                        183b Robinson Road, Lower Moutere 7175
+			</p>
+
+<p>
+                        <strong>Special directions</strong><br>
+                        Use the driveway to the right of the private house which is at the front of the property. Follow the driveway round the back as it veers to the left and park off to the side. Find your way to the rounded-roof tiny studio, located just off the driveway bend, towards the south/back of the property.
+                    </p>
+
+                    <p>
+                        <strong>Appointments</strong><br>
+                        By appointment only. Book online, email or WhatsApp message (Please note, I do not have reliable cell phone reception from home. Please use WhatsApp or email to contact me if not booking online)
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="mailto:attune.centre@proton.me"
+                    class="btn"
+                >
+                    Email me
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 Attune Centre
+        </p>
+
+        <p style="margin-top: 0.4rem;">
+            Biodynamic Craniosacral Therapy
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#about">
+                Therapy
+            </a>
+
+            <a href="#pricing">
+                Pricing
+            </a>
+
+            <a href="#faq">
+                FAQ
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         FAQ JAVASCRIPT
+    ========================================================== -->
+
+    <script>
+
+        const faqQuestions =
+            document.querySelectorAll(".faq-question");
+
+
+        faqQuestions.forEach(question => {
+
+            question.addEventListener("click", () => {
+
+                const currentItem =
+                    question.parentElement;
+
+                const answer =
+                    currentItem.querySelector(".faq-answer");
+
+
+                /* Close other FAQ items */
+
+                document.querySelectorAll(".faq-item")
+                    .forEach(item => {
+
+                        if (item !== currentItem) {
+
+                            item.classList.remove("active");
+
+                            const otherAnswer =
+                                item.querySelector(".faq-answer");
+
+                            otherAnswer.style.maxHeight = null;
+
+                        }
+
+                    });
+
+
+                /* Toggle selected item */
+
+                currentItem.classList.toggle("active");
+
+
+                if (currentItem.classList.contains("active")) {
+
+                    answer.style.maxHeight =
+                        answer.scrollHeight + "px";
+
+                } else {
+
+                    answer.style.maxHeight = null;
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+</html>
