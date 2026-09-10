@@ -113,29 +113,40 @@
         }
 
         .logo {
-
-            font-size: 1.25rem;
-            font-weight: 400;
-
+            display: flex;
+            align-items: center;
+            gap: 12px;
             color: var(--accent-deep);
-
             text-decoration: none;
-
-            letter-spacing: 2px;
-            text-transform: uppercase;
-
             white-space: nowrap;
         }
 
+        .logo img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .logo span {
+            font-size: 1.25rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+
         .nav-links {
-
             display: flex;
-
             list-style: none;
-
             gap: 1.5rem;
-
             align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
         }
 
         .nav-links a {
@@ -193,24 +204,53 @@
 
         .hero-content {
 
-            max-width: 760px;
+            max-width: var(--max-width);
 
             margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns: 320px 1fr;
+
+            gap: 4.5rem;
+
+            align-items: center;
         }
 
-        .eyebrow {
+        .hero-image-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-            color: var(--accent-deep);
+       .hero-image-placeholder {
+    width: auto;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    height: 220px;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
 
-            text-transform: uppercase;
+/* AREA 2: Create a brand new block directly underneath the first one */
+.hero-image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none !important;
+    margin: 0 !important;
+}
 
-            letter-spacing: 2px;
-
-            font-size: 0.78rem;
-
-            margin-bottom: 1.2rem;
-
-            font-weight: 600;
+        .hero-text {
+            max-width: 650px;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
         }
 
         .hero h1 {
@@ -959,11 +999,13 @@
 
         .contact-details strong {
 
-            color:
-                var(--accent-deep);
-
-            font-weight:
-                500;
+            display: inline-block;
+    color: var(--accent-deep);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.25rem;
         }
 
         .directions {
@@ -1065,6 +1107,25 @@
                     0.82rem;
             }
 
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-image-placeholder {
+                width: 100%;
+                max-width: 600px;
+                height: 180px;
+                margin: 0 auto;
+            }
+
+            .hero-text {
+                width: 100%;
+                max-width: 760px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
             .bcst-intro {
 
                 grid-template-columns:
@@ -1117,6 +1178,20 @@
 
                 padding:
                     5rem 1.3rem 3rem;
+            }
+
+            .nav-container {
+                padding: 1rem 1.1rem;
+            }
+
+            .logo img {
+                width: 42px;
+                height: 42px;
+            }
+
+            .logo span {
+                font-size: 1.05rem;
+                letter-spacing: 1.5px;
             }
 
             .hero h1 {
@@ -1208,7 +1283,8 @@
         <nav class="nav-container">
 
             <a href="#home" class="logo">
-                Attune Centre
+                <img src="Attunecentrelogo2026.png" alt="Attune Centre logo">
+                <span>ATTUNE CENTRE</span>
             </a>
 
             <ul class="nav-links">
@@ -1271,35 +1347,41 @@
 
             <div class="hero-content">
 
-                <div class="eyebrow">
-                    Biodynamic Craniosacral Therapy
+                <div class="hero-image-wrap">
+                    <img
+                        src="attune-nature-placeholder.png"
+                        alt="Peaceful natural setting"
+                        class="hero-image-placeholder"
+                    >
                 </div>
 
-                <h1>
-                    A gentle but profound holistic therapy.
-                </h1>
+                <div class="hero-text">
 
-                <p>
-                    Welcome to Attune Centre — a calm and supportive
-                    space to pause, rest and reconnect with yourself
-                    through gentle Biodynamic Craniosacral Therapy.
-                </p>
+                    <div class="eyebrow">
+                        Biodynamic Craniosacral Therapy
+                    </div>
 
-                <a href="#booking" class="btn">
-                    Book an appointment
-                </a>
+                    <h1>
+                        A gentle but profound holistic therapy.
+                    </h1>
 
-                <a href="#about" class="btn btn-secondary">
-                    Learn more
-                </a>
+                    <p>
+                        Welcome to Attune Centre — a calm and supportive
+                        space to pause, rest and reconnect with yourself
+                        through gentle Biodynamic Craniosacral Therapy.
+                    </p>
+
+                    <a href="#booking" class="btn">
+                        Book an appointment
+                    </a>
+
+                    <a href="#about" class="btn btn-secondary">
+                        Learn more
+                    </a>
+
+                </div>
 
             </div>
-
-            <div
-                class="hero-image"
-                role="img"
-                aria-label="Calm treatment space at Attune Centre"
-            ></div>
 
         </section>
 
@@ -1408,11 +1490,7 @@
                         What to expect
                     </h2>
 
-                    <p class="section-subtitle">
-                        A session gives you an opportunity to slow
-                        down, settle and become present with yourself.
-                    </p>
-
+                   
                 </div>
 
 
@@ -1421,10 +1499,7 @@
 
                     <div class="expect-step">
 
-                        <div class="step-number">
-                            01
-                        </div>
-
+                        
                         <h3>
                             Arrive & settle
                         </h3>
@@ -1441,10 +1516,7 @@
 
                     <div class="expect-step">
 
-                        <div class="step-number">
-                            02
-                        </div>
-
+                        
                         <h3>
                             The session
                         </h3>
@@ -1461,9 +1533,7 @@
 
                     <div class="expect-step">
 
-                        <div class="step-number">
-                            03
-                        </div>
+                        
 
                         <h3>
                             Time to integrate
@@ -1484,9 +1554,7 @@
 
                     <p>
                         <strong>What should I wear?</strong>
-                        Comfortable clothing is ideal. You remain
-                        fully clothed throughout the session, so
-                        choose whatever helps you feel relaxed and
+                        Comfortable clothing is ideal. Choose whatever helps you feel relaxed and
                         at ease.
                     </p>
 
@@ -1532,7 +1600,7 @@
                     <p>
                         My journey with Biodynamic Craniosacral Therapy
                         began in the early 2000s, when my children and
-                        I received sessions from a wonderful local
+                        I received sessions from a skilled local
                         therapist, Simon Gosling, then living in Motueka.
                     </p>
 
@@ -1554,13 +1622,12 @@
 
                     <p>
                         I began Attune Centre as a clinical practice
-                        in 2019. My clinic is a small, calming,
-                        timber-lined studio where you can step away
+                        soon after. My clinic is a cute timber-lined studio on wheels where you can step away
                         from the demands of everyday life.
                     </p>
 
                     <p>
-                        I feel privileged to offer this gentle and
+                        I feel privileged to be able to offer this gentle and
                         profound therapy, and to provide a space where
                         you can pause, breathe, listen and reconnect
                         with yourself.
@@ -1646,9 +1713,7 @@
                         </h3>
 
                         <p>
-                            Available for a session or an amount
-                            of your choice
-                        </p>
+                            Gift a cranio session</p>
 
                     </div>
 
@@ -1931,7 +1996,11 @@
 
                         By appointment only.
                     </p>
-
+<p>
+                            <strong>Please note:</strong> I do not have reliable cell phone reception
+                            from home. If you are not booking online,
+                            please use WhatsApp or email to contact me.
+                        </p>
 
                     <div class="directions">
 
@@ -1940,23 +2009,20 @@
                         </strong>
 
                         <p>
-                            Use the driveway to the right of the
-                            private house at the front of the property.
-                            Follow the driveway around the back as it
-                            veers to the left and park off to the side.
+                            The clinic is a cute, rounded-roof timber studio on wheels located towards the back of the property.
                         </p>
 
                         <p>
-                            The clinic is the rounded-roof tiny studio,
-                            located just off the driveway bend towards
-                            the south/back of the property.
+                            When you arrive, use the driveway to the right of the private house at the front of the property. Follow the driveway around the back as it veers to the left. There is parking available beside the driveway, near the studio.
                         </p>
 
-                        <p>
-                            I do not have reliable cell phone reception
-                            from home. If you are not booking online,
-                            please use WhatsApp or email to contact me.
-                        </p>
+ <p>
+The studio is just off the bend in the driveway, towards the south/back of the property.
+ </p>
+
+ <p><strong>Please note:</strong> The clinic is by appointment only, so please arrange your appointment before arriving.
+ </p>
+
 
                     </div>
 
@@ -1987,7 +2053,7 @@
         <div class="footer-links">
 
             <a href="#about">
-                Therapy
+                BCST
             </a>
 
             <a href="#pricing">
