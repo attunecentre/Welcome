@@ -13,7 +13,7 @@
         content="Attune Centre offers gentle Biodynamic Craniosacral Therapy in a calm and supportive environment in Lower Moutere."
     >
 
-    <style>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=4RjCFs1QifpN3Iv2wy4aHMIpqH-q-rs_IdH4ZPMbZS-ImHOvZwCt5b0K3XJoswwBmubrcCbWT8s2A6fRhS7wRSi1E5ni1ctaYwUDh4u_NHqzER4gW2RBhFmrvvJDjH7Xlf2tf9TTBQnDUaLUqpc4UUEalKVmgCE-yoqV4Sj7VdsyH3Khrhu9LmPBFBo_CeG785bucFr3uMZ-hr2bq-Czt7UWDB5L_zqPi04320jD0X1Wl-uwl9IfnInOoF4sMkq1nIALALonAkFTBzdN4S94oaFdTBdTOOl3oFtFkS_QkrfsZ5alDCvqJ6R2VRhGJayIOB0Fj2ph3-MolN42szQyZQ" charset="UTF-8"></script><style>
 
         /* =========================================================
            ATTUNE CENTRE
@@ -518,11 +518,12 @@
         }
 
 
+        
         /* =========================================================
-           WHAT TO EXPECT
+           ABOUT ME
         ========================================================= */
 
-        .expect-section {
+         .practitioner {
 
             background:
                 var(--accent-sky);
@@ -530,118 +531,7 @@
             padding:
                 6rem 2rem;
         }
-
-        .expect-inner {
-
-            max-width:
-                var(--max-width);
-
-            margin:
-                0 auto;
-        }
-
-        .expect-steps {
-
-            max-width:
-                850px;
-
-            margin:
-                0 auto;
-
-            display:
-                grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap:
-                3rem;
-        }
-
-        .expect-step {
-
-            text-align:
-                center;
-        }
-
-        .step-number {
-
-            display:
-                flex;
-
-            width:
-                44px;
-
-            height:
-                44px;
-
-            border-radius:
-                50%;
-
-            background:
-                var(--accent-deep);
-
-            color:
-                white;
-
-            align-items:
-                center;
-
-            justify-content:
-                center;
-
-            margin:
-                0 auto 1.2rem;
-
-            font-size:
-                0.9rem;
-        }
-
-        .expect-step h3 {
-
-            color:
-                var(--accent-deep);
-
-            font-size:
-                1.15rem;
-
-            font-weight:
-                500;
-
-            margin-bottom:
-                0.7rem;
-        }
-
-        .expect-step p {
-
-            color:
-                var(--text-muted);
-
-            font-size:
-                0.95rem;
-        }
-
-        .expect-note {
-
-            max-width:
-                650px;
-
-            margin:
-                3.5rem auto 0;
-
-            text-align:
-                center;
-
-            color:
-                var(--text-muted);
-        }
-
-
-        /* =========================================================
-           ABOUT ME
-        ========================================================= */
-
-        .practitioner {
+.practitioner {
 
             display:
                 grid;
@@ -978,17 +868,9 @@
                 wrap;
         }
 
-        .contact-details {
-
-            border-top:
-                1px solid
-                rgba(79, 109, 98, 0.15);
-
-            padding-top:
-                2.5rem;
-
-            text-align:
-                left;
+        .booking-container > .contact-details {
+            padding-top: 2.5rem;
+            text-align: left;
         }
 
         .contact-details p {
@@ -1025,6 +907,7 @@
             font-size:
                 0.92rem;
         }
+
 
 
         /* =========================================================
@@ -1242,12 +1125,7 @@
                     0.8rem 0 0;
             }
 
-            .expect-section,
-            .booking-section {
-
-                padding:
-                    4.5rem 1.3rem;
-            }
+           
 
             .price-row {
 
@@ -1266,8 +1144,165 @@
 
         }
 
-    </style>
+    
 
+
+
+/* =========================================================
+   ATTUNE CENTRE CONTACT SECTION
+   ========================================================= */
+
+.attunecentre-contact {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 30px 70px;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: #3d3d3d;
+  position: relative;
+}
+
+.attunecentre-contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 50vw);
+  width: 100vw;
+  height: 1px;
+  background: rgba(79, 109, 98, 0.15);
+}
+
+.attunecentre-contact > h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 300;
+  margin: 0 0 3.5rem;
+  line-height: 1.1;
+}
+
+.attunecentre-contact .contact-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.attunecentre-contact .contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.attunecentre-contact .location-icon {
+  width: 48px;
+  min-width: 48px;
+  font-size: 31px;
+  color: #007b9c;
+  text-align: center;
+  margin-right: 12px;
+  line-height: 1;
+}
+
+.attunecentre-contact .contact-icon-square {
+  background: #007b9c;
+  color: #ffffff;
+  width: 34px;
+  min-width: 34px;
+  height: 34px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  margin-right: 19px;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.attunecentre-contact .contact-icon-square:hover {
+  opacity: 0.85;
+}
+
+.attunecentre-contact .contact-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.attunecentre-contact .contact-text strong {
+  font-weight: 600;
+  color: var(--accent-deep);
+}
+
+.attunecentre-contact .contact-text a {
+  color: #333;
+  text-decoration: none;
+}
+
+.attunecentre-contact .contact-text a:hover {
+  text-decoration: underline;
+}
+
+.attunecentre-contact .contact-note {
+  font-size: 0.78em;
+  color: #6a7779;
+}
+
+.attunecentre-contact .therapist {
+  text-align: center;
+  margin-top: 55px;
+}
+
+.attunecentre-contact .therapist h1 {
+  margin: 0 0 12px;
+  font-size: 2.2rem;
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+.attunecentre-contact .therapist p {
+  margin: 0;
+  font-size: 1.05rem;
+  font-style: normal;
+  color: var(--text-muted);
+}
+
+@media (max-width: 750px) {
+  .attunecentre-contact {
+    padding: 50px 20px 55px;
+  }
+
+  .attunecentre-contact > h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .attunecentre-contact .contact-columns {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .attunecentre-contact .contact-text {
+    font-size: 1rem;
+  }
+
+  .attunecentre-contact .therapist {
+    margin-top: 35px;
+  }
+
+  .attunecentre-contact .therapist h1 {
+    font-size: 2rem;
+  }
+
+  .attunecentre-contact .therapist p {
+    font-size: 1rem;
+  }
+}
+</style>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 
@@ -1295,15 +1330,10 @@
                     </a>
                 </li>
 
-                <li>
-                    <a href="#expect">
-                        Your session
-                    </a>
-                </li>
-
+               
                 <li>
                     <a href="#about-me">
-                        About Me
+                        About me
                     </a>
                 </li>
 
@@ -1318,10 +1348,16 @@
                         FAQ
                     </a>
                 </li>
+ <li>
+                    <a href="#contact">
+                        Contact me
+                    </a>
+                </li>
+
 
                 <li>
                     <a href="#booking" class="nav-book">
-                        Book
+                        Book Online
                     </a>
                 </li>
 
@@ -1362,13 +1398,12 @@
                     </div>
 
                     <h1>
-                        A gentle but profound holistic therapy.
+                        A gentle and profound holistic therapy.
                     </h1>
 
                     <p>
-                        Welcome to Attune Centre — a calm and supportive
-                        space to pause, rest and reconnect with yourself
-                        through gentle Biodynamic Craniosacral Therapy.
+                        Welcome to Attune Centre — a space to pause, rest and reconnect with yourself and your health
+                        through Biodynamic Craniosacral Therapy.
                     </p>
 
                     <a href="#booking" class="btn">
@@ -1414,13 +1449,13 @@
                         Biodynamic Craniosacral Therapy
                     </h2>
 
-                    <p>
-                        Biodynamic Craniosacral Therapy is a subtle,
-                        gentle and non-invasive form of hands-on therapy.
+                    <p> 
+                        Biodynamic Craniosacral Therapy is a highly skilled method of listening to the body's inherent health expressions and a gentle form of hands-on therapy.
+                    
                     </p>
 
                     <p>
-                        Through gentle touch and deep listening,
+                        Through neutral touch and deep listening,
                         the practitioner supports the conditions in
                         which the body and nervous system can slow,
                         settle and reconnect with a sense of ease.
@@ -1434,11 +1469,11 @@
 
                     <p class="history-link">
                         <a
-                            href="https://www.craniosacraltherapy.org/our-history"
+                            href="https://www.bodyintelligence.com/about/what-is-biodynamic-craniosacral-therapy"
                             target="_blank"
                             rel="noopener"
                         >
-                            Learn more about the history of craniosacral therapy →
+                            Learn more about biodynamic craniosacral therapy →
                         </a>
                     </p>
 
@@ -1449,14 +1484,7 @@
 
             <div class="wellbeing-note">
 
-                <p>
-                    People may choose craniosacral therapy during
-                    times of stress, discomfort, transition, tiredness
-                    or overwhelm, or simply as dedicated time for rest
-                    and wellbeing.
-                </p>
-
-                <p class="disclaimer">
+               <p class="disclaimer">
 
                     <strong>Please note:</strong>
                     Biodynamic Craniosacral Therapy is a complementary
@@ -1472,98 +1500,7 @@
         </section>
 
 
-        <!-- =====================================================
-             YOUR SESSION
-        ====================================================== -->
-
-        <section id="expect" class="expect-section">
-
-            <div class="expect-inner">
-
-                <div class="section-header">
-
-                    <div class="eyebrow">
-                        Your session
-                    </div>
-
-                    <h2 class="section-title">
-                        What to expect
-                    </h2>
-
-                   
-                </div>
-
-
-                <div class="expect-steps">
-
-
-                    <div class="expect-step">
-
-                        
-                        <h3>
-                            Arrive & settle
-                        </h3>
-
-                        <p>
-                            We begin with a relaxed conversation about
-                            how you are feeling and what has brought
-                            you in. There is no need to have everything
-                            figured out beforehand.
-                        </p>
-
-                    </div>
-
-
-                    <div class="expect-step">
-
-                        
-                        <h3>
-                            The session
-                        </h3>
-
-                        <p>
-                            You remain fully clothed and comfortably
-                            supported on a treatment table, or a chair
-                            if more suitable. Gentle touch and stillness
-                            allow you to settle into your experience.
-                        </p>
-
-                    </div>
-
-
-                    <div class="expect-step">
-
-                        
-
-                        <h3>
-                            Time to integrate
-                        </h3>
-
-                        <p>
-                            At the end of the session there is time
-                            to pause, notice how you feel and
-                            integrate your experience.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="expect-note">
-
-                    <p>
-                        <strong>What should I wear?</strong>
-                        Comfortable clothing is ideal. Choose whatever helps you feel relaxed and
-                        at ease.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
+      
 
         <!-- =====================================================
              ABOUT ME
@@ -1607,23 +1544,16 @@
                     <p>
                         My children experienced benefits following
                         birth trauma and various injuries, and I also
-                        received treatments myself. My own longstanding
-                        tailbone discomfort improved within a few
+                        received treatments myself including for my own longstanding
+                        tailbone discomfort which improved within a few
                         sessions. I was captivated by the depth and
                         gentleness of the work.
                     </p>
 
                     <p>
-                        More than a decade later, I had the opportunity
-                        to study at Body Intelligence in Auckland over
-                        two years. I qualified with a Diploma in
-                        Biodynamic Craniosacral Therapy in 2019.
-                    </p>
-
-                    <p>
-                        I began Attune Centre as a clinical practice
-                        soon after. My clinic is a cute timber-lined studio on wheels where you can step away
-                        from the demands of everyday life.
+                        In 2017 I had the opportunity
+                        to study at Body Intelligence in Auckland and qualified with a Diploma in
+                        Biodynamic Craniosacral Therapy in 2019. Soon after I opened my clinical practice Attune Centre in a cute timber-lined studio on wheels.
                     </p>
 
                     <p>
@@ -1947,84 +1877,13 @@
                     >
                         Email me
                     </a>
-
                 </div>
+
 
 
                 <div class="contact-details">
 
-                    <p>
-                        <strong>
-                            Email
-                        </strong><br>
-
-                        <a href="mailto:attune.centre@proton.me">
-                            attune.centre@proton.me
-                        </a>
-                    </p>
-
-
-                    <p>
-                        <strong>
-                            WhatsApp
-                        </strong><br>
-
-                        <a
-                            href="https://wa.me/6421305051"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            021 130 5051
-                        </a>
-                    </p>
-
-
-                    <p>
-                        <strong>
-                            Location
-                        </strong><br>
-
-                        183b Robinson Road<br>
-                        Lower Moutere 7175
-                    </p>
-
-
-                    <p>
-                        <strong>
-                            Appointments
-                        </strong><br>
-
-                        By appointment only.
-                    </p>
-<p>
-                            <strong>Please note:</strong> I do not have reliable cell phone reception
-                            from home. If you are not booking online,
-                            please use WhatsApp or email to contact me.
-                        </p>
-
-                    <div class="directions">
-
-                        <strong>
-                            Finding the clinic
-                        </strong>
-
-                        <p>
-                            The clinic is a cute, rounded-roof timber studio on wheels located towards the back of the property.
-                        </p>
-
-                        <p>
-                            When you arrive, use the driveway to the right of the private house at the front of the property. Follow the driveway around the back as it veers to the left. There is parking available beside the driveway, near the studio.
-                        </p>
-
- <p>
-The studio is just off the bend in the driveway, towards the south/back of the property.
- </p>
-
- <p><strong>Please note:</strong> The clinic is by appointment only, so please arrange your appointment before arriving.
- </p>
-
-
-                    </div>
+                    
 
                 </div>
 
@@ -2033,7 +1892,89 @@ The studio is just off the bend in the driveway, towards the south/back of the p
         </section>
 
 
-    </main>
+    
+
+<!-- ATTUNE CENTRE CONTACT BLOCK -->
+
+ <section id="contact">
+<section class="attunecentre-contact">
+   
+
+  <h2>Contact me</h2>
+
+  <div class="contact-columns">
+
+
+<div class="contact-locations">
+
+      <div class="contact-item location-item">
+        <div class="contact-icon location-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="contact-text">
+          <strong>
+                            Location
+                        </strong><br>
+           <div>Attune Centre</div>
+<div>183b Robinson Road</div>
+          <div>Lower Moutere 7175</div>
+        </div>
+      </div>
+
+<div class="contact-item location-item">
+        <div class="contact-icon location-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="contact-text">
+          <strong>
+                            Finding the Clinic
+                        </strong><br>
+          <div>Use the driveway to the right of the private house at the front. As the driveway veers to the left you will see the round-roofed Attune Centre studio on the right near the bend in the driveway.
+                  </div>
+      </div>
+</div>
+    </div>
+
+    <div class="contact-details-new">
+
+      <div class="contact-item">
+        <a class="contact-icon-square" href="mailto:attune.centre@proton.me" aria-label="Email Attune Centre">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <div class="contact-text">
+          <a href="mailto:attune.centre@proton.me">attune.centre@proton.me</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <a class="contact-icon-square" href="https://wa.me/6421305051" target="_blank" rel="noopener" aria-label="WhatsApp Attune Centre">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <div class="contact-text">
+          <a href="https://wa.me/6421305051" target="_blank" rel="noopener">021 130 5051 <span class="contact-note"></a>(WhatsApp only - no cell coverage)</span>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <a class="contact-icon-square" href="https://www.facebook.com/TinaMortensenBCST/" target="_blank" rel="noopener" aria-label="Facebook Attune Centre">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <div class="contact-text">
+          <a href="https://www.facebook.com/TinaMortensenBCST/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="therapist">
+    <h1>Tina Mortensen</h1>
+    <p>Biodynamic Craniosacral Therapist</p>
+  </div>
+
+</section>
+
+</main>
 
 
     <!-- =========================================================
@@ -2052,23 +1993,29 @@ The studio is just off the bend in the driveway, towards the south/back of the p
 
         <div class="footer-links">
 
-            <a href="#about">
-                BCST
+            <a href="https://www.facebook.com/TinaMortensenBCST/">
+                Facebook
             </a>
 
-            <a href="#pricing">
-                Pricing
+<a href="link to instagram">
+                Instagram (coming soon)
             </a>
 
-            <a href="#faq">
-                FAQ
+             <a href="https://wa.me/6421305051"
+                            target="_blank"
+                            rel="noopener"
+                        >
+
+                WhatsApp
             </a>
 
-            <a href="#booking">
-                Contact
-            </a>
+<a href="mailto:attune.centre@proton.me">
+                            Email
+                        </a>
 
+           
         </div>
+
 
     </footer>
 
