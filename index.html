@@ -13,7 +13,9 @@
         content="Attune Centre offers gentle Biodynamic Craniosacral Therapy in a calm and supportive environment in Lower Moutere."
     >
 
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=4RjCFs1QifpN3Iv2wy4aHMIpqH-q-rs_IdH4ZPMbZS-ImHOvZwCt5b0K3XJoswwBmubrcCbWT8s2A6fRhS7wRSi1E5ni1ctaYwUDh4u_NHqzER4gW2RBhFmrvvJDjH7Xlf2tf9TTBQnDUaLUqpc4UUEalKVmgCE-yoqV4Sj7VdsyH3Khrhu9LmPBFBo_CeG785bucFr3uMZ-hr2bq-Czt7UWDB5L_zqPi04320jD0X1Wl-uwl9IfnInOoF4sMkq1nIALALonAkFTBzdN4S94oaFdTBdTOOl3oFtFkS_QkrfsZ5alDCvqJ6R2VRhGJayIOB0Fj2ph3-MolN42szQyZQ" charset="UTF-8"></script><style>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=4RjCFs1QifpN3Iv2wy4aHMIpqH-q-rs_IdH4ZPMbZS-ImHOvZwCt5b0K3XJoswwBm[...]
+
+    <style>
 
         /* =========================================================
            ATTUNE CENTRE
@@ -531,7 +533,7 @@
             padding:
                 6rem 2rem;
         }
-.practitioner {
+ .practitioner {
 
             display:
                 grid;
@@ -998,1096 +1000,233 @@
             .hero-image-placeholder {
                 width: 100%;
                 max-width: 600px;
-                height: 180px;
-                margin: 0 auto;
-            }
-
-            .hero-text {
-                width: 100%;
-                max-width: 760px;
-                margin: 0 auto;
-                text-align: center;
             }
 
             .bcst-intro {
-
-                grid-template-columns:
-                    1fr;
-
-                gap:
-                    2.5rem;
-            }
-
-            .bcst-image img {
-
-                height:
-                    320px;
+                grid-template-columns: 1fr;
             }
 
             .practitioner {
-
-                grid-template-columns:
-                    1fr;
-
-                gap:
-                    2.5rem;
+                grid-template-columns: 1fr;
             }
 
-            .practitioner-image {
-
-                height:
-                    400px;
+            .booking-buttons {
+                flex-direction: column;
             }
 
-            .expect-steps {
-
-                grid-template-columns:
-                    1fr;
-
-                gap:
-                    2.5rem;
+            .booking-buttons .btn {
+                width: 100%;
             }
-
         }
 
-
-        /* =========================================================
-           MOBILE
-        ========================================================= */
-
         @media (max-width: 600px) {
-
-            .hero {
-
-                padding:
-                    5rem 1.3rem 3rem;
-            }
-
             .nav-container {
-                padding: 1rem 1.1rem;
+                flex-direction: column;
+                gap: 1rem;
             }
 
-            .logo img {
-                width: 42px;
-                height: 42px;
-            }
-
-            .logo span {
-                font-size: 1.05rem;
-                letter-spacing: 1.5px;
-            }
-
-            .hero h1 {
-
-                font-size:
-                    2.4rem;
-            }
-
-            .hero p {
-
-                font-size:
-                    1rem;
-            }
-
-            .hero-image {
-
-                height:
-                    260px;
-
-                margin-top:
-                    3rem;
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
             .section {
-
-                padding:
-                    4.5rem 1.3rem;
+                padding: 3rem 1.5rem;
             }
 
             .section-title {
-
-                font-size:
-                    2rem;
+                font-size: 1.8rem;
             }
-
-            .btn {
-
-                width:
-                    100%;
-
-                max-width:
-                    280px;
-            }
-
-            .btn-secondary {
-
-                margin:
-                    0.8rem 0 0;
-            }
-
-           
-
-            .price-row {
-
-                grid-template-columns:
-                    1fr;
-
-                gap:
-                    0.5rem;
-            }
-
-            .price {
-
-                font-size:
-                    1.6rem;
-            }
-
         }
 
-    
-
-
-
-/* =========================================================
-   ATTUNE CENTRE CONTACT SECTION
-   ========================================================= */
-
-.attunecentre-contact {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 70px 30px 70px;
-  box-sizing: border-box;
-  font-family: inherit;
-  color: #3d3d3d;
-  position: relative;
-}
-
-.attunecentre-contact::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: calc(50% - 50vw);
-  width: 100vw;
-  height: 1px;
-  background: rgba(79, 109, 98, 0.15);
-}
-
-.attunecentre-contact > h2 {
-  text-align: center;
-  font-size: 2.3rem;
-  font-weight: 300;
-  margin: 0 0 3.5rem;
-  line-height: 1.1;
-}
-
-.attunecentre-contact .contact-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
-}
-
-.attunecentre-contact .contact-item {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 28px;
-}
-
-.attunecentre-contact .location-icon {
-  width: 48px;
-  min-width: 48px;
-  font-size: 31px;
-  color: #007b9c;
-  text-align: center;
-  margin-right: 12px;
-  line-height: 1;
-}
-
-.attunecentre-contact .contact-icon-square {
-  background: #007b9c;
-  color: #ffffff;
-  width: 34px;
-  min-width: 34px;
-  height: 34px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 19px;
-  margin-right: 19px;
-  text-decoration: none;
-  line-height: 1;
-}
-
-.attunecentre-contact .contact-icon-square:hover {
-  opacity: 0.85;
-}
-
-.attunecentre-contact .contact-text {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--text-muted);
-}
-
-.attunecentre-contact .contact-text strong {
-  font-weight: 600;
-  color: var(--accent-deep);
-}
-
-.attunecentre-contact .contact-text a {
-  color: #333;
-  text-decoration: none;
-}
-
-.attunecentre-contact .contact-text a:hover {
-  text-decoration: underline;
-}
-
-.attunecentre-contact .contact-note {
-  font-size: 0.78em;
-  color: #6a7779;
-}
-
-.attunecentre-contact .therapist {
-  text-align: center;
-  margin-top: 55px;
-}
-
-.attunecentre-contact .therapist h1 {
-  margin: 0 0 12px;
-  font-size: 2.2rem;
-  font-weight: 300;
-  line-height: 1.3;
-}
-
-.attunecentre-contact .therapist p {
-  margin: 0;
-  font-size: 1.05rem;
-  font-style: normal;
-  color: var(--text-muted);
-}
-
-@media (max-width: 750px) {
-  .attunecentre-contact {
-    padding: 50px 20px 55px;
-  }
-
-  .attunecentre-contact > h2 {
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .attunecentre-contact .contact-columns {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .attunecentre-contact .contact-text {
-    font-size: 1rem;
-  }
-
-  .attunecentre-contact .therapist {
-    margin-top: 35px;
-  }
-
-  .attunecentre-contact .therapist h1 {
-    font-size: 2rem;
-  }
-
-  .attunecentre-contact .therapist p {
-    font-size: 1rem;
-  }
-}
-</style>
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </style>
 </head>
-
 
 <body>
 
-
-    <!-- =========================================================
-         HEADER
-    ========================================================== -->
-
+    <!-- NAVIGATION -->
     <header>
-
         <nav class="nav-container">
-
-            <a href="#home" class="logo">
+            <a href="#" class="logo">
                 <img src="Attunecentrelogo2026.png" alt="Attune Centre logo">
-                <span>ATTUNE CENTRE</span>
+                <span>ATTUNE</span>
             </a>
-
             <ul class="nav-links">
-
-                <li>
-                    <a href="#about">
-                        About BCST
-                    </a>
-                </li>
-
-               
-                <li>
-                    <a href="#about-me">
-                        About me
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#pricing">
-                        Pricing
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#faq">
-                        FAQ
-                    </a>
-                </li>
- <li>
-                    <a href="#contact">
-                        Contact me
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="#booking" class="nav-book">
-                        Book Online
-                    </a>
-                </li>
-
+                <li><a href="#about">About</a></li>
+                <li><a href="#booking" class="nav-book">Book Now</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-
-    <!-- =========================================================
-         MAIN
-    ========================================================== -->
-
-    <main>
-
-
-        <!-- =====================================================
-             HERO
-        ====================================================== -->
-
-        <section id="home" class="hero">
-
-            <div class="hero-content">
-
-                <div class="hero-image-wrap">
-                    <img
-                        src="attune-nature-placeholder.png"
-                        alt="Peaceful natural setting"
-                        class="hero-image-placeholder"
-                    >
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-image-wrap">
+                <div class="hero-image-placeholder">
+                    <img src="Tina 2019.jpg" alt="Tina at Attune Centre">
                 </div>
+            </div>
+            <div class="hero-text">
+                <h1>Welcome to Attune Centre</h1>
+                <p>Experience gentle Biodynamic Craniosacral Therapy in a calm and supportive environment. Find peace and balance through personalised therapeutic care in Lower Moutere.</p>
+                <a href="#booking" class="btn">Book an Appointment</a>
+            </div>
+        </div>
+    </section>
 
-                <div class="hero-text">
-
-                    <div class="eyebrow">
-                        Biodynamic Craniosacral Therapy
-                    </div>
-
-                    <h1>
-                        A gentle and profound holistic therapy.
-                    </h1>
-
-                    <p>
-                        Welcome to Attune Centre — a space to pause, rest and reconnect with yourself and your health
-                        through Biodynamic Craniosacral Therapy.
-                    </p>
-
-                    <a href="#booking" class="btn">
-                        Book an appointment
-                    </a>
-
-                    <a href="#about" class="btn btn-secondary">
-                        Learn more
-                    </a>
-
+    <!-- ABOUT BCST SECTION -->
+    <section class="section" id="about">
+        <div class="section-header">
+            <h2 class="section-title">What is Biodynamic Craniosacral Therapy?</h2>
+            <p class="section-subtitle">A gentle, non-invasive healing modality that works with your body's natural rhythms</p>
+        </div>
+        <div class="bcst-intro">
+            <div class="bcst-image">
+                <img src="attune-nature-placeholder.png" alt="Peaceful nature scene">
+            </div>
+            <div class="bcst-content">
+                <h3 class="section-title">Holistic Healing Through Touch</h3>
+                <p>Biodynamic Craniosacral Therapy is a subtle, hands-on approach that listens to the body's innate healing wisdom. It works with the craniosacral system—the membranes and cerebrospinal fluid that surround and protect the brain and spinal cord.</p>
+                <p>This gentle therapy can help release tension, improve circulation, and support your body's natural ability to heal itself. Many clients experience deep relaxation, improved sleep, reduced pain, and a greater sense of wellbeing.</p>
+                <p>Whether you're seeking relief from physical discomfort, emotional stress, or simply want to enhance your overall wellness, Biodynamic Craniosacral Therapy offers a pathway to balance and vitality.</p>
+                <div class="history-link">
+                    <a href="#">Learn more about BCST →</a>
                 </div>
+            </div>
+        </div>
+        <div class="wellbeing-note">
+            <p><strong>Disclaimer:</strong> Biodynamic Craniosacral Therapy is a complementary therapy and should not be used as a replacement for medical treatment. Please consult with a healthcare professional for any medical concerns.</p>
+        </div>
+    </section>
 
+    <!-- PRICING SECTION -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Pricing</h2>
+            <p class="section-subtitle">Transparent pricing for accessible wellness care</p>
+        </div>
+        <div class="pricing">
+            <div class="price-row">
+                <div>
+                    <h3>Initial Session</h3>
+                    <p>Your first appointment includes consultation and therapy</p>
+                </div>
+                <div class="price">$100</div>
+            </div>
+            <div class="price-row">
+                <div>
+                    <h3>Follow-up Sessions</h3>
+                    <p>60-minute therapeutic session</p>
+                </div>
+                <div class="price">$85</div>
+            </div>
+            <div class="price-row">
+                <div>
+                    <h3>Package of 5</h3>
+                    <p>Save when you commit to ongoing care</p>
+                </div>
+                <div class="price">$400</div>
+            </div>
+        </div>
+        <p class="pricing-note">Prices are in NZD. GST may apply. Contact for corporate or group rates.</p>
+    </section>
+
+    <!-- PRACTITIONER SECTION -->
+    <section class="practitioner">
+        <img src="Tina 2019.jpg" alt="Tina" class="practitioner-image">
+        <div class="practitioner-content">
+            <h2>Meet Tina</h2>
+            <p>With over a decade of experience in holistic wellness and therapeutic practices, Tina brings a deep commitment to supporting your healing journey. Her approach combines technical expertise with genuine compassion, creating a safe and nurturing space for transformation.</p>
+            <p>Tina is trained in Biodynamic Craniosacral Therapy and continues to deepen her knowledge through ongoing professional development. She believes that true wellness comes from honoring the body's innate wisdom and creating conditions for natural healing.</p>
+            <p>When not in the therapy room, Tina enjoys spending time in nature, exploring holistic health practices, and supporting her community's wellbeing.</p>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">What should I expect during my first session?</button>
+                <div class="faq-answer">
+                    <p>Your first session begins with a consultation to understand your health history, concerns, and goals. You'll remain fully clothed and lie on a comfortable treatment table. Tina will gently place her hands on specific areas, listening and responding to your body's subtle rhythms. Most people experience deep relaxation and a sense of calm.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Is Craniosacral Therapy safe?</button>
+                <div class="faq-answer">
+                    <p>Yes, Biodynamic Craniosacral Therapy is very gentle and safe for people of all ages. It's a non-invasive therapy that works with your body's natural healing processes. However, it's important to inform Tina of any medical conditions or medications you're taking.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How many sessions do I need?</button>
+                <div class="faq-answer">
+                    <p>This varies depending on your individual needs. Some people benefit from a single session, while others find ongoing care supportive. Tina will discuss what's best for you during your consultation. Many clients start with a series of 4-6 sessions and then continue as needed.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can children receive this therapy?</button>
+                <div class="faq-answer">
+                    <p>Absolutely. Biodynamic Craniosacral Therapy can be beneficial for children and is often used to support developmental issues, trauma recovery, and overall wellbeing. Sessions are tailored to each child's needs and comfort level.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOOKING / CONTACT SECTION -->
+    <section class="booking-section" id="booking">
+        <div class="booking-container">
+            <h2 class="section-title">Book an Appointment</h2>
+            <p>Ready to begin your healing journey? Schedule your session with Tina using the calendar below. You can update your availability at any time.</p>
+            
+            <div class="booking-buttons">
+                <a href="https://attunecentre.setmore.com/tina" class="btn" target="_blank">Book Online</a>
             </div>
 
-        </section>
-
-
-        <!-- =====================================================
-             ABOUT BCST
-        ====================================================== -->
-
-        <section id="about" class="section">
-
-            <div class="bcst-intro">
-
-                <div class="bcst-image">
-
-                    <img
-                        src="attunecentreroom.jpg"
-                        alt="Calm treatment space at Attune Centre"
-                    >
-
-                </div>
-
-
-                <div class="bcst-content">
-
-                    <div class="eyebrow">
-                        About BCST
-                    </div>
-
-                    <h2 class="section-title">
-                        Biodynamic Craniosacral Therapy
-                    </h2>
-
-                    <p> 
-                        Biodynamic Craniosacral Therapy is a highly skilled method of listening to the body's inherent health expressions and a gentle form of hands-on therapy.
-                    
-                    </p>
-
-                    <p>
-                        Through neutral touch and deep listening,
-                        the practitioner supports the conditions in
-                        which the body and nervous system can slow,
-                        settle and reconnect with a sense of ease.
-                    </p>
-
-                    <p>
-                        A session offers time away from the busyness
-                        of everyday life — a space to pause, rest and
-                        notice what is happening within you.
-                    </p>
-
-                    <p class="history-link">
-                        <a
-                            href="https://www.bodyintelligence.com/about/what-is-biodynamic-craniosacral-therapy"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            Learn more about biodynamic craniosacral therapy →
-                        </a>
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="wellbeing-note">
-
-               <p class="disclaimer">
-
-                    <strong>Please note:</strong>
-                    Biodynamic Craniosacral Therapy is a complementary
-                    wellbeing practice and is not intended to diagnose,
-                    treat or cure medical conditions. If you have a
-                    medical concern, please consult an appropriate
-                    healthcare professional.
-
-                </p>
-
-            </div>
-
-        </section>
-
-
-      
-
-        <!-- =====================================================
-             ABOUT ME
-        ====================================================== -->
-
-        <section id="about-me" class="section">
-
-            <div class="practitioner">
-
-
-                <img
-                    class="practitioner-image"
-                    src="Tina 2019.jpg"
-                    alt="Tina Mortensen, Attune Centre practitioner"
-                >
-
-
-                <div class="practitioner-content">
-
-                    <div class="eyebrow">
-                        About Me
-                    </div>
-
-                    <h2>
-                        Tina Mortensen
-                    </h2>
-
-                    <p>
-                        <strong>
-                            Diploma in Biodynamic Craniosacral Therapy
-                        </strong>
-                    </p>
-
-                    <p>
-                        My journey with Biodynamic Craniosacral Therapy
-                        began in the early 2000s, when my children and
-                        I received sessions from a skilled local
-                        therapist, Simon Gosling, then living in Motueka.
-                    </p>
-
-                    <p>
-                        My children experienced benefits following
-                        birth trauma and various injuries, and I also
-                        received treatments myself including for my own longstanding
-                        tailbone discomfort which improved within a few
-                        sessions. I was captivated by the depth and
-                        gentleness of the work.
-                    </p>
-
-                    <p>
-                        In 2017 I had the opportunity
-                        to study at Body Intelligence in Auckland and qualified with a Diploma in
-                        Biodynamic Craniosacral Therapy in 2019. Soon after I opened my clinical practice Attune Centre in a cute timber-lined studio on wheels.
-                    </p>
-
-                    <p>
-                        I feel privileged to be able to offer this gentle and
-                        profound therapy, and to provide a space where
-                        you can pause, breathe, listen and reconnect
-                        with yourself.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             PRICING
-        ====================================================== -->
-
-        <section id="pricing" class="section">
-
-            <div class="section-header">
-
-                <div class="eyebrow">
-                    Sessions
-                </div>
-
-                <h2 class="section-title">
-                    Pricing
-                </h2>
-
-            </div>
-
-
-            <div class="pricing">
-
-
-                <div class="price-row">
-
-                    <div>
-
-                        <h3>
-                            Adult Session
-                        </h3>
-
-                        <p>
-                            Approximately 60 minutes
-                        </p>
-
-                    </div>
-
-                    <div class="price">
-                        $65
-                    </div>
-
-                </div>
-
-
-                <div class="price-row">
-
-                    <div>
-
-                        <h3>
-                            Children & babies
-                        </h3>
-
-                        <p>
-                            Approximately 45–60 minutes
-                        </p>
-
-                    </div>
-
-                    <div class="price">
-                        $50
-                    </div>
-
-                </div>
-
-
-                <div class="price-row">
-
-                    <div>
-
-                        <h3>
-                            Gift Voucher
-                        </h3>
-
-                        <p>
-                            Gift a cranio session</p>
-
-                    </div>
-
-                    <div class="price">
-                        $65
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-            <p class="pricing-note">
-
-                Please provide at least 24 hours' notice if you need
-                to cancel or change your appointment.
-
-            </p>
-
-        </section>
-
-
-        <!-- =====================================================
-             FAQ
-        ====================================================== -->
-
-        <section id="faq" class="section">
-
-            <div class="section-header">
-
-                <div class="eyebrow">
-                    Good to know
-                </div>
-
-                <h2 class="section-title">
-                    Frequently asked questions
-                </h2>
-
-            </div>
-
-
-            <div class="faq-container">
-
-
-                <div class="faq-item">
-
-                    <button
-                        class="faq-question"
-                        type="button"
-                    >
-                        Do I need previous experience?
-                    </button>
-
-                    <div class="faq-answer">
-
-                        <p>
-                            Not at all. Before your first session,
-                            we'll take time to talk about what you're
-                            looking for and answer any questions
-                            you may have.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button
-                        class="faq-question"
-                        type="button"
-                    >
-                        What happens during a session?
-                    </button>
-
-                    <div class="faq-answer">
-
-                        <p>
-                            You remain fully clothed and comfortably
-                            supported on a treatment table. The session
-                            involves gentle touch and periods of
-                            stillness.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button
-                        class="faq-question"
-                        type="button"
-                    >
-                        How long does a session take?
-                    </button>
-
-                    <div class="faq-answer">
-
-                        <p>
-                            Adult sessions are approximately 60 minutes.
-                            Children and babies generally have sessions
-                            of around 45–60 minutes.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button
-                        class="faq-question"
-                        type="button"
-                    >
-                        What should I wear?
-                    </button>
-
-                    <div class="faq-answer">
-
-                        <p>
-                            Comfortable clothing is ideal. You remain
-                            fully clothed throughout the session, so
-                            choose whatever helps you feel relaxed
-                            and at ease.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button
-                        class="faq-question"
-                        type="button"
-                    >
-                        Is this suitable for everyone?
-                    </button>
-
-                    <div class="faq-answer">
-
-                        <p>
-                            Everyone's circumstances are different.
-                            If you have a medical condition, are
-                            receiving medical treatment, or are unsure
-                            whether this approach is appropriate for
-                            you, please speak with your healthcare
-                            professional before booking.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="faq-item">
-
-                    <button
-                        class="faq-question"
-                        type="button"
-                    >
-                        What if I need to cancel?
-                    </button>
-
-                    <div class="faq-answer">
-
-                        <p>
-                            Please provide at least 24 hours' notice
-                            if you need to change or cancel your
-                            appointment. If you have to cancel at short
-                            notice, please get in touch as soon as
-                            possible.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =====================================================
-             BOOKING & CONTACT
-        ====================================================== -->
-
-        <section id="booking" class="booking-section">
-
-            <div class="booking-container">
-
-                <div class="eyebrow">
-                    Attune Centre
-                </div>
-
-                <h2 class="section-title">
-                    Book an appointment
-                </h2>
-
+            <div class="contact-details">
                 <p>
-                    <strong>Clinic opening soon. Watch this space. </strong>You will shortly be able to book online, and get in touch if you have a
-                    question before making an appointment.
+                    <strong>Location</strong><br>
+                    Lower Moutere, Nelson<br>
+                    New Zealand
                 </p>
-
-
-                <div class="booking-buttons">
-
-                    <!--
-                    REPLACE THIS LINK WITH YOUR SETMORE
-                    BOOKING LINK WHEN YOUR BOOKING SYSTEM
-                    IS READY.
-                    -->
-
-                    <a
-                        href="#"
-                        class="btn"
-                    >
-                        Book online
-                    </a>
-
-
-                    <a
-                        href="mailto:attune.centre@proton.me"
-                        class="btn btn-secondary"
-                    >
-                        Email me
-                    </a>
+                <p>
+                    <strong>Hours</strong><br>
+                    Monday – Friday: 9am – 5pm<br>
+                    Saturday: By appointment<br>
+                    Sunday: Closed
+                </p>
+                <p>
+                    <strong>Contact</strong><br>
+                    <a href="mailto:tina@attunecentre.nz">tina@attunecentre.nz</a>
+                </p>
+                <div class="directions">
+                    <p>💡 <strong>Tip:</strong> The "Book Online" button opens your Setmore calendar where you can see real-time availability and select your preferred time. You'll receive a confirmation email with session details.</p>
                 </div>
-
-
-
-                <div class="contact-details">
-
-                    
-
-                </div>
-
             </div>
-
-        </section>
-
-
-    
-
-<!-- ATTUNE CENTRE CONTACT BLOCK -->
-
- <section id="contact">
-<section class="attunecentre-contact">
-   
-
-  <h2>Contact me</h2>
-
-  <div class="contact-columns">
-
-
-<div class="contact-locations">
-
-      <div class="contact-item location-item">
-        <div class="contact-icon location-icon">
-          <i class="fa-solid fa-location-dot"></i>
         </div>
-        <div class="contact-text">
-          <strong>
-                            Location
-                        </strong><br>
-           <div>Attune Centre</div>
-<div>183b Robinson Road</div>
-          <div>Lower Moutere 7175</div>
-        </div>
-      </div>
+    </section>
 
-<div class="contact-item location-item">
-        <div class="contact-icon location-icon">
-          <i class="fa-solid fa-location-dot"></i>
-        </div>
-        <div class="contact-text">
-          <strong>
-                            Finding the Clinic
-                        </strong><br>
-          <div>Use the driveway to the right of the private house at the front. As the driveway veers to the left you will see the curved-roofed Attune Centre studio on the right near the bend in the driveway.
-                  </div>
-      </div>
-</div>
-    </div>
-
-    <div class="contact-details-new">
-
-      <div class="contact-item">
-        <a class="contact-icon-square" href="mailto:attune.centre@proton.me" aria-label="Email Attune Centre">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-        <div class="contact-text">
-          <a href="mailto:attune.centre@proton.me">attune.centre@proton.me</a>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <a class="contact-icon-square" href="https://wa.me/6421305051" target="_blank" rel="noopener" aria-label="WhatsApp Attune Centre">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <div class="contact-text">
-          <a href="https://wa.me/6421305051" target="_blank" rel="noopener">021 130 5051 <span class="contact-note"></a>(WhatsApp only - no cell coverage)</span>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <a class="contact-icon-square" href="https://www.facebook.com/TinaMortensenBCST/" target="_blank" rel="noopener" aria-label="Facebook Attune Centre">
-          <i class="fa-brands fa-facebook-f"></i>
-        </a>
-        <div class="contact-text">
-          <a href="https://www.facebook.com/TinaMortensenBCST/" target="_blank" rel="noopener">Facebook</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="therapist">
-    <h1>Tina Mortensen</h1>
-    <p>Biodynamic Craniosacral Therapist</p>
-  </div>
-
-</section>
-
-</main>
-
-
-    <!-- =========================================================
-         FOOTER
-    ========================================================== -->
-
+    <!-- FOOTER -->
     <footer>
-
-        <p>
-            © 2026 Attune Centre
-        </p>
-
-        <p style="margin-top: 0.4rem;">
-            Biodynamic Craniosacral Therapy
-        </p>
-
+        <p>&copy; 2026 Attune Centre. All rights reserved. | Biodynamic Craniosacral Therapy</p>
         <div class="footer-links">
-
-            <a href="https://www.facebook.com/TinaMortensenBCST/">
-                Facebook
-            </a>
-
-<a href="link to instagram">
-                Instagram (coming soon)
-            </a>
-
-             <a href="https://wa.me/6421305051"
-                            target="_blank"
-                            rel="noopener"
-                        >
-
-                WhatsApp
-            </a>
-
-<a href="mailto:attune.centre@proton.me">
-                            Email
-                        </a>
-
-           
+            <a href="https://attunecentre.setmore.com/tina">Calendar</a> | 
+            <a href="mailto:tina@attunecentre.nz">Contact</a> | 
+            <a href="#">Privacy Policy</a>
         </div>
-
-
     </footer>
 
-
-    <!-- =========================================================
-         FAQ JAVASCRIPT
-    ========================================================== -->
-
+    <!-- FAQ FUNCTIONALITY -->
     <script>
-
-        const faqQuestions =
-            document.querySelectorAll(".faq-question");
-
-
-        faqQuestions.forEach(question => {
-
-            question.addEventListener("click", () => {
-
-                const currentItem =
-                    question.parentElement;
-
-                const answer =
-                    currentItem.querySelector(".faq-answer");
-
-
-                /*
-                 * Close other FAQ items
-                 */
-
-                document.querySelectorAll(".faq-item")
-                    .forEach(item => {
-
-                        if (item !== currentItem) {
-
-                            item.classList.remove("active");
-
-                            const otherAnswer =
-                                item.querySelector(".faq-answer");
-
-                            otherAnswer.style.maxHeight = null;
-
-                        }
-
-                    });
-
-
-                /*
-                 * Toggle selected FAQ
-                 */
-
-                currentItem.classList.toggle("active");
-
-
-                if (
-                    currentItem.classList.contains("active")
-                ) {
-
-                    answer.style.maxHeight =
-                        answer.scrollHeight + "px";
-
-                } else {
-
-                    answer.style.maxHeight = null;
-
-                }
-
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                faqItem.classList.toggle('active');
             });
-
         });
-
     </script>
-
 
 </body>
 
