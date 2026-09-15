@@ -1864,60 +1864,123 @@
         </section>
 
 
-        <!-- =====================================================
-             BOOKING & CONTACT
-        ====================================================== -->
+<!-- =====================================================
+     BOOKING & CONTACT
+====================================================== -->
 
-        <section id="booking" class="booking-section">
+<section id="booking" class="booking-section">
 
-            <div class="booking-container">
+    <!-- Wrapper controls side-by-side alignment with image on the left -->
+    <div class="booking-layout-wrapper">
+        
+        <!-- Image Container (Left Side) -->
+        <div class="booking-image-container">
+            <img 
+                src="placeholder-image-name.jpg" 
+                alt="Biodynamic Craniosacral Therapy session at Attune Centre" 
+                class="booking-side-image"
+            />
+        </div>
 
-                <div class="eyebrow">
-                    Attune Centre
-                </div>
+        <!-- Your exact content container (Right Side) -->
+        <div class="booking-container">
 
-                <h2 class="section-title">
-                    Book an appointment
-                </h2>
+            <div class="eyebrow">
+                Attune Centre
+            </div>
 
-                <p>
-                    <strong>Clinic opening soon. Watch this space. </strong>You will shortly be able to book online, and get in touch if you have a
-                    question before making an appointment.
-                </p>
+            <h2 class="section-title">
+                Book an appointment
+            </h2>
 
+            <p>
+                <strong>Clinic opening soon. Watch this space. </strong>You will shortly be able to book online, and get in touch if you have a
+                question before making an appointment.
+            </p>
 
-                <div class="booking-buttons">
+            <div class="booking-buttons">
+                
+                <a
+                    href="https://setmore.com"
+                    class="btn" target="_blank" rel="noopener noreferrer"
+                >
+                    Book online
+                </a>
 
-                    
-                    <a
-                        href="https://attunecentre.setmore.com/tina"
-                        class="btn" target="_blank" rel="noopener noreferrer"
-                    >
+                <a
+                    href="mailto:attune.centre@proton.me"
+                    class="btn btn-secondary"
+                >
+                    Email me
+                </a>
+            </div>
 
-                    
-                        Book online
-                    </a>
+            <div class="contact-details">
 
-
-                    <a
-                        href="mailto:attune.centre@proton.me"
-                        class="btn btn-secondary"
-                    >
-                        Email me
-                    </a>
-                </div>
-
-
-
-                <div class="contact-details">
-
-                    
-
-                </div>
+                
 
             </div>
 
-        </section>
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+    /* Desktop layout: Image Left, Text Right */
+    .booking-layout-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center; /* Vertically centers text next to the image */
+        justify-content: center;
+        gap: 50px; /* Gap between image and text */
+        padding: 40px 20px;
+    }
+
+    /* Fixed Standard Square Ratio container */
+    .booking-image-container {
+        flex: 0 1 450px; /* Keeps the square size uniform on desktop */
+        width: 100%;
+        max-width: 450px;
+        aspect-ratio: 1 / 1; /* Forces a standard 1:1 square shape */
+        overflow: hidden;
+        border-radius: 8px; /* Optional soft corners. Remove if sharp edges are preferred */
+    }
+
+    /* Prevents image distortion inside the square container */
+    .booking-side-image {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover; /* Crops the source photo into a clean square automatically */
+    }
+
+    /* Right side text adjustments */
+    .booking-container {
+        flex: 1 1 50%;
+        max-width: 550px;
+    }
+
+    /* Responsive Mobile Fix: Automatically stacks vertically on smaller viewports */
+    @media (max-width: 868px) {
+        .booking-layout-wrapper {
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .booking-image-container {
+            flex: 1 1 auto;
+            max-width: 100%; /* Stretches square out to match content boundaries on mobile */
+        }
+        
+        .booking-container {
+            max-width: 100%;
+        }
+    }
+</style>
 
 
     
